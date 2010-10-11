@@ -330,6 +330,7 @@ namespace PB
 		}
 		#endregion
 
+		#region Editing
 		private void selectItem(Point point)
 		{
 			listboxHelper.selectItem(point);
@@ -361,6 +362,7 @@ namespace PB
 		{
 			listboxHelper.selectPreviousItem();
 		}
+		#endregion
 
 		public enum SimpleSize { Large, Small };
 		public enum SortOrder { SORTED, REVERSESORTED, UNSORTED };
