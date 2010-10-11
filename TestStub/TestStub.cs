@@ -33,6 +33,10 @@ namespace PB
 		public TestStub()
 		{
 			InitializeComponent();
+			editableListBox.Items.AddRange(m_values);
+			htmlRenderer.RenderURL("http://github.com/philbooth/PBCtrl");
 		}
+
+		private static readonly string[] m_values = {"7", "1", "2", "9", "0", "8", "5", "4", "6", "3"};
 	}
 }

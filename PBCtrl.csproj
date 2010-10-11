@@ -44,6 +44,12 @@
     <Compile Include="EditableListBox.Designer.cs">
       <DependentUpon>EditableListBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="HTMLRenderer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HTMLRenderer.Designer.cs">
+      <DependentUpon>HTMLRenderer.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListboxHelper.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -62,6 +68,10 @@
     <EmbeddedResource Include="EditableListBox.resx">
       <SubType>Designer</SubType>
       <DependentUpon>EditableListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HTMLRenderer.resx">
+      <DependentUpon>HTMLRenderer.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <SubType>Designer</SubType>
