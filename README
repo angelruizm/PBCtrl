@@ -38,3 +38,12 @@ Three methods are provided for rendering documents:
   * `void RenderMarkup(string)` renders the document markup as
     supplied in the argument.
 
+In addition, two methods are provided to support communication
+between the rendered document and the hosting application:
+
+  * `object CallFunction(string, object[])`: Calls the script
+    function specified by the first argument, passing the second
+    argument as arguments and returning any return value.
+  * `void AddCallback(Object)`: Adds the supplied object to the
+    rendered DOM as window.external.
+
