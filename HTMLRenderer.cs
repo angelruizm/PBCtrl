@@ -27,7 +27,7 @@ namespace PB
 	/// <summary>
 	/// An HTML+CSS document renderer.
 	/// </summary>
-	[Category("PB Controls"), Description("An HTML/CSS renderer.")]
+	[Category("PB Controls"), Description("An HTML+CSS document renderer.")]
 	public partial class HTMLRenderer : UserControl
 	{
 		public HTMLRenderer()
