@@ -39,15 +39,15 @@ namespace PB
 			this.browser.Location = new System.Drawing.Point(0, 0);
 			this.browser.Margin = new System.Windows.Forms.Padding(0);
 			this.browser.Name = "browser";
-			this.browser.Size = new System.Drawing.Size(250, 250);
+			this.browser.Size = new System.Drawing.Size(150, 150);
 			this.browser.TabIndex = 0;
 			// 
-			// WebBrowser
+			// HTMLRenderer
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.Controls.Add(this.browser);
-			this.Name = "WebBrowser";
+			this.Name = "HTMLRenderer";
 			this.ResumeLayout(false);
 
 		}
