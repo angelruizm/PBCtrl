@@ -28,9 +28,28 @@ namespace PB
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.editableListBox = new PB.EditableListBox();
 			this.htmlRenderer = new PB.HTMLRenderer();
+			this.editableListBox = new PB.EditableListBox();
 			this.SuspendLayout();
+			// 
+			// htmlRenderer
+			// 
+			this.htmlRenderer.AllowDrop = true;
+			this.htmlRenderer.AllowNavigation = true;
+			this.htmlRenderer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+						| System.Windows.Forms.AnchorStyles.Left)
+						| System.Windows.Forms.AnchorStyles.Right)));
+			this.htmlRenderer.AutoScroll = true;
+			this.htmlRenderer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.htmlRenderer.EnableAcceleratorKeys = true;
+			this.htmlRenderer.EnableScrollBars = true;
+			this.htmlRenderer.Location = new System.Drawing.Point(12, 206);
+			this.htmlRenderer.Margin = new System.Windows.Forms.Padding(0);
+			this.htmlRenderer.Name = "htmlRenderer";
+			this.htmlRenderer.Size = new System.Drawing.Size(237, 219);
+			this.htmlRenderer.SuppressErrors = false;
+			this.htmlRenderer.TabIndex = 1;
+			this.htmlRenderer.UseDefaultContextMenu = true;
 			// 
 			// editableListBox
 			// 
@@ -50,22 +69,6 @@ namespace PB
 			this.editableListBox.Sorted = false;
 			this.editableListBox.TabIndex = 0;
 			this.editableListBox.UseTabStops = true;
-			// 
-			// htmlRenderer
-			// 
-			this.htmlRenderer.AllowDrop = true;
-			this.htmlRenderer.AllowNavigation = true;
-			this.htmlRenderer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this.htmlRenderer.EnableAcceleratorKeys = true;
-			this.htmlRenderer.EnableScrollBars = true;
-			this.htmlRenderer.Location = new System.Drawing.Point(12, 203);
-			this.htmlRenderer.Name = "htmlRenderer";
-			this.htmlRenderer.Size = new System.Drawing.Size(237, 219);
-			this.htmlRenderer.SuppressErrors = false;
-			this.htmlRenderer.TabIndex = 1;
-			this.htmlRenderer.UseDefaultContextMenu = true;
 			// 
 			// TestStub
 			// 
