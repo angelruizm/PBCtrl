@@ -94,7 +94,7 @@ namespace PB
 
 		public void RenderFile(string path)
 		{
-			browser.Navigate(m_filePrefix + path);
+			browser.Navigate(filePrefix + path);
 		}
 
 		public void RenderMarkup(string markup)
@@ -115,6 +115,6 @@ namespace PB
 		}
 		#endregion
 
-		private readonly static string m_filePrefix = "file:///";
+		private readonly static string filePrefix = "file:///";
 	}
 }
