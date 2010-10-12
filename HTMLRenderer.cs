@@ -104,9 +104,9 @@ namespace PB
 		#endregion
 
 		#region Communication
-		public void CallFunction(string name, object[] arguments)
+		public object CallFunction(string name, object[] arguments)
 		{
-			browser.Document.InvokeScript(name, arguments);
+			return browser.Document.InvokeScript(name, arguments);
 		}
 
 		public void AddCallback(Object callback)
