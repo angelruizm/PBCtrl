@@ -109,7 +109,7 @@ namespace PB
 			return browser.Document.InvokeScript(name, arguments);
 		}
 
-		public void AddCallback(Object callback)
+		public void SetCallback(Object callback)
 		{
 			browser.ObjectForScripting = callback;
 		}
