@@ -103,6 +103,18 @@ namespace PB
 		}
 		#endregion
 
+		#region Communication
+		public void CallFunction(string name, object[] arguments)
+		{
+			browser.Document.InvokeScript(name, arguments);
+		}
+
+		public void AddCallback(Object callback)
+		{
+			browser.ObjectForScripting = callback;
+		}
+		#endregion
+
 		private readonly static string m_filePrefix = "file:///";
 	}
 }
