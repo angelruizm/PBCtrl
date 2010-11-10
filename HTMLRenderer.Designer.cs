@@ -14,9 +14,12 @@ namespace PB
 		protected override void Dispose(bool disposing)
 		{
 			if(disposing && (components != null))
-			{
 				components.Dispose();
-			}
+
+			this.browser.Stop();
+			this.browser.Dispose();
+			this.browser = null;
+
 			base.Dispose(disposing);
 		}
 
